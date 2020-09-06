@@ -3,6 +3,8 @@ import { Card } from "react-bootstrap";
 import { faPenFancy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import "./Weather.css";
+
 export default function Weather() {
     let weatherData = {
       city: "New York",

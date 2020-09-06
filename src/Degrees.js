@@ -1,6 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
+import "./Degrees.css";
+
 export default function Degrees() {
    let weatherData = {
         description: "Cloudy",

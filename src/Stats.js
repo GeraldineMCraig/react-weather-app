@@ -1,6 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
+import "./Stats.css";
+
 export default function Stats() {
     let weatherData = {
       humidity: "80",

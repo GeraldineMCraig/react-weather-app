@@ -3,6 +3,8 @@ import { Container, Row, Col, Card, InputGroup, Button, FormControl } from "reac
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import "./Header.css";
+
 export default function Header() {
     return (
         <Container>

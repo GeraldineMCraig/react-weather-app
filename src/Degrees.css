@@ -1,0 +1,21 @@
+.degrees {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .conversion {
+    text-decoration: none;
+    color: #6c757d;
+  }
+  
+  .degrees .active {
+    color: #6c757d;
+    cursor: default;
+  }
+  
+  .degrees .active:hover {
+    color: #6c757d;
+    cursor: default;
+    text-decoration: none;
+  }
+  

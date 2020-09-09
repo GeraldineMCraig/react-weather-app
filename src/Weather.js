@@ -37,7 +37,7 @@ export default function Weather(props) {
                         <a href="/">°C</a> |<a href="/">°F</a></small></Card.Title>
         <Card.Text className="stats">
           With {weatherData.humidity}% humidity and wind speed of{" "}
-          {weatherData.windSpeed} km/h
+          {weatherData.wind} km/h
         </Card.Text>
       </div>
     );

@@ -3,14 +3,13 @@ import Header from "./Header";
 import Weather from "./Weather";
 import Footer from "./Footer";
 import { Card } from "react-bootstrap";
-
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-      <h1 class="display-4">
+      <h1 className="display-4">
         Geraldine's <small className="text-muted">SheCodes Weather App</small>
       </h1>
       <hr />

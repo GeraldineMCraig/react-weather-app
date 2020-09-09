@@ -30,8 +30,8 @@ export default function Header() {
                   aria-describedby="basic-addon1"
                   type="search"
                   placeholder="Type a city..."
-                  autofocus="on"
-                  autocomplete="off"
+                  autoFocus="on"
+                  autoComplete="off"
                 />
               </InputGroup>
             </Col>

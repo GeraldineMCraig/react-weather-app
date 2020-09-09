@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import { Card } from "react-bootstrap";
 import { faPenFancy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -14,7 +14,7 @@ export default function Weather(props) {
             ready: true,
             temperature: response.data.main.temp,
             humidity: response.data.main.humidity,
-            date: "Wednesday 07:00",
+            date: new Date(response.data.dt * 1000),
             description: response.data.weather[0].description,
             iconUrl: "http://openweathermap.org/img/wn/04n@2x.png",
             wind: response.data.wind.speed,
@@ -26,7 +26,7 @@ export default function Weather(props) {
         return (
       <div className="Weather">
         <Card.Subtitle className="mb-2 text-muted weather">
-          Looks like {weatherData.description} this {weatherData.date},{" "}
+          Looks like {weatherData.description} this <FormattedDate date={weatherData.date} />{" "}
           {weatherData.city}...
           <FontAwesomeIcon icon={faPenFancy} />
         </Card.Subtitle>

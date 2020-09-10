@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 import Weather from "./Weather";
 import Footer from "./Footer";
 import { Card } from "react-bootstrap";
@@ -14,10 +13,7 @@ export default function App() {
       </h1>
       <hr />
       <Card className="text-center">
-  <Card.Header><Header /></Card.Header>
-  <Card.Body>
       <Weather defaultCity="New York"/>
-  </Card.Body>
   <Card.Footer className="text-muted"><Footer /></Card.Footer>
 </Card>
 

@@ -43,12 +43,12 @@ export default function Weather(props) {
             <Card.Header>
             <Container>
           <Row>
-            <Col sm={6}>
+            <Col sm={5}>
               <Card.Text className="Cities">
                 Lisbon | Paris | Sydney | San Francisco
               </Card.Text>
             </Col>
-            <Col sm={6}>
+            <Col sm={7}>
               <Form inline onSubmit={handleSubmit}>
                   <Button variant="outline-secondary" size="sm">
                     <FontAwesomeIcon icon={faMapMarkerAlt} />

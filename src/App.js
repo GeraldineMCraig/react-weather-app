@@ -12,7 +12,7 @@ export default function App() {
         Geraldine's <small className="text-muted">SheCodes Weather App</small>
       </h1>
       <hr />
-      <Card>
+      <Card border="secondary" style={{ width: '35rem' }}>
       <Weather defaultCity="New York"/>
       <Footer />
       </Card>

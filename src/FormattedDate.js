@@ -1,4 +1,6 @@
 import React from "react";
+import { Card } from "react-bootstrap";
+import "./FormattedDate.css";
 
 export default function FormattedDate(props) {
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -11,5 +13,5 @@ export default function FormattedDate(props) {
     if (minutes < 10) {
         minutes = `0${minutes}`
     }
-    return <div>{day} @ {hours}:{minutes},</div>;
+    return <Card.Subtitle className="Date">this {day} @ {hours}:{minutes},</Card.Subtitle>;
 }

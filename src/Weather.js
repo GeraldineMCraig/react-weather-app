@@ -44,7 +44,7 @@ export default function Weather(props) {
             <Container>
           <Row>
             <Col sm={6}>
-              <Card.Text className="cities">
+              <Card.Text className="Cities">
                 Lisbon | Paris | Sydney | San Francisco
               </Card.Text>
             </Col>

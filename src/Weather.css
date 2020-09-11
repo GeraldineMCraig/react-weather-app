@@ -1,46 +1,4 @@
-.cities {
+.Cities {
   font-family: "Cedarville Cursive", cursive;
   margin-top: 10px;
 }
-
-.weather {
-    font-size: 25px;
-    text-align: center;
-    font-family: "Cedarville Cursive", cursive;
-    margin-top: 15px;
-  }
-
-.Weather canvas {
-  margin-right: 5px;
-}
-
-  .degrees {
-    font-size: 50px;
-    text-align: center;
-  }
-  
-  .conversion {
-    text-decoration: none;
-    color: #6c757d;
-  }
-  
-  .degrees .active {
-    color: #6c757d;
-    cursor: default;
-  }
-  
-  .degrees .active:hover {
-    color: #6c757d;
-    cursor: default;
-    text-decoration: none;
-  }
-
-  .stats {
-    text-align: center;
-    font-family: "Cedarville Cursive", cursive;
-  }
-  
-  .conversion {
-    text-decoration: none;
-    color: #6c757d;
-  }

@@ -9,8 +9,7 @@ import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
     return (
-        <div className="WeatherInfo">  
-    <Card.Body>
+    <Card.Body className="WeatherInfo">
           <Card.Subtitle className="mb-2 text-muted Intro">
             Looks like {props.data.description} <FormattedDate date={props.data.date} />{props.data.city}...<FontAwesomeIcon icon={faPenFancy} />
           </Card.Subtitle>
@@ -20,6 +19,5 @@ export default function WeatherInfo(props) {
             {props.data.wind} km/h
           </Card.Text>
           </Card.Body>
-          </div>
     );
 }

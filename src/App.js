@@ -12,12 +12,11 @@ export default function App() {
         Geraldine's <small className="text-muted">SheCodes Weather App</small>
       </h1>
       <hr />
-      <Card className="text-center">
+      <Card>
       <Weather defaultCity="New York"/>
-  <Card.Footer className="text-muted"><Footer /></Card.Footer>
-</Card>
-
+      <Footer />
+      </Card>
       </div>
-    </div>
+      </div>
   );
 }

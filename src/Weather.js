@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import { Container, Row, Col, Card, Form, Button, FormControl } from "react-bootstrap";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
@@ -68,7 +69,10 @@ export default function Weather(props) {
           </Row>
         </Container>
             </Card.Header>
+            <Card.Body className="CardBody">
               <WeatherInfo data={weatherData} />
+              <WeatherForecast city={weatherData.city} />
+              </Card.Body>
       </div>
     );
         } else {

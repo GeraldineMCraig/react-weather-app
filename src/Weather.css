@@ -1,3 +1,7 @@
+.CardBody {
+  background-image: linear-gradient(to top, #dad4ec 0%, #f3e7e9 100%);
+}
+
 .Cities {
   font-family: "Cedarville Cursive", cursive;
   margin-top: 10px;

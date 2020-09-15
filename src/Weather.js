@@ -2,15 +2,7 @@ import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  Form,
-  Button,
-  FormControl,
-} from "react-bootstrap";
+import { Row, Col, Card, Form, Button, FormControl } from "react-bootstrap";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Weather.css";
@@ -50,32 +42,36 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <Card.Header>
-          <Container>
-            <Row>
-              <Col sm={5}>
-                <Card.Text className="Cities">
-                  Lisbon | Paris | Sydney | San Francisco
-                </Card.Text>
-              </Col>
-              <Col sm={7}>
-                <Form inline onSubmit={handleSubmit}>
-                  <Button variant="outline-secondary" size="sm">
-                    <FontAwesomeIcon icon={faMapMarkerAlt} />
-                  </Button>
-                  <Button type="submit" variant="outline-secondary" size="sm">
-                    Search
-                  </Button>
-                  <FormControl
-                    size="sm"
-                    type="search"
-                    placeholder="Type a city..."
-                    autoFocus="on"
-                    onChange={handleCityChange}
-                  />
-                </Form>
-              </Col>
-            </Row>
-          </Container>
+          <Row>
+            <Col xs="auto">
+              <Card.Text className="Cities">
+                Lisbon | Paris | Sydney | San Francisco
+              </Card.Text>
+            </Col>
+            <Col>
+              <Form onSubmit={handleSubmit} className="Search">
+                <Form.Row>
+                  <Col xs="auto">
+                    <Button variant="outline-secondary" size="sm">
+                      <FontAwesomeIcon icon={faMapMarkerAlt} />
+                    </Button>
+                    <Button type="submit" variant="outline-secondary" size="sm">
+                      Search
+                    </Button>
+                  </Col>
+                  <Col>
+                    <FormControl
+                      size="sm"
+                      type="search"
+                      placeholder="Type a city..."
+                      autoFocus="on"
+                      onChange={handleCityChange}
+                    />
+                  </Col>
+                </Form.Row>
+              </Form>
+            </Col>
+          </Row>
         </Card.Header>
         <Card.Body className="CardBody">
           <WeatherInfo data={weatherData} />

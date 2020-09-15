@@ -8,7 +8,8 @@ export default function Footer() {
         <a href="https://github.com/KissaSpirit/weather-react">
           Open-source code
         </a>{" "}
-        by SheCodes and Geraldine Craig
+        by SheCodes and{" "}
+        <a href="https://github.com/KissaSpirit">Geraldine Craig</a>
       </small>
     </Card.Footer>
   );

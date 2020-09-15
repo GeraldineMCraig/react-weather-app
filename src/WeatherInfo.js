@@ -10,12 +10,14 @@ import "./WeatherInfo.css";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <Card.Subtitle className="mb-2 text-muted Intro">
-        Looks like {props.data.description}{" "}
-        <FormattedDate date={props.data.date} />
-        {props.data.city}...
-        <FontAwesomeIcon icon={faPenFancy} />
-      </Card.Subtitle>
+      <Container>
+        <Card.Subtitle className="mb-2 text-muted Intro">
+          Looks like {props.data.description}{" "}
+          <FormattedDate date={props.data.date} />
+          {props.data.city}...
+          <FontAwesomeIcon icon={faPenFancy} />
+        </Card.Subtitle>
+      </Container>
       <Container className="Temperature">
         <Row className="justify-content-md-center">
           <Col xs lg="2">

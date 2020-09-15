@@ -2,7 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
-import { Card } from "react-bootstrap";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import { faPenFancy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./WeatherInfo.css";
@@ -16,8 +16,16 @@ export default function WeatherInfo(props) {
         {props.data.city}...
         <FontAwesomeIcon icon={faPenFancy} />
       </Card.Subtitle>
-      <WeatherIcon code={props.data.icon} />
-      <WeatherTemperature celsius={props.data.temperature} />
+      <Container className="Temperature">
+        <Row className="justify-content-md-center">
+          <Col xs lg="2">
+            <WeatherIcon code={props.data.icon} />
+          </Col>
+          <Col md="auto">
+            <WeatherTemperature celsius={props.data.temperature} />
+          </Col>
+        </Row>
+      </Container>
       <Card.Text className="Stats">
         With {props.data.humidity}% humidity and wind speed of {props.data.wind}{" "}
         km/h

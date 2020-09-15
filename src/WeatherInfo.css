@@ -5,6 +5,10 @@
   margin-top: 15px;
 }
 
+.Temperature {
+  margin: 15px;
+}
+
 .Stats {
   text-align: center;
   font-family: "Cedarville Cursive", cursive;

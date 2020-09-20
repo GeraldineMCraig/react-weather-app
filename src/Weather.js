@@ -51,12 +51,6 @@ export default function Weather(props) {
     navigator.geolocation.getCurrentPosition(handleResponse);
   }
 
-  let currentLocationButton = document.querySelector(
-    "#current-location-button"
-  );
-
-  currentLocationButton.addEventListener("click", getCurrentLocation);
-
   if (weatherData.ready) {
     return (
       <div className="Weather">
@@ -71,7 +65,11 @@ export default function Weather(props) {
               <Form onSubmit={handleSubmit} className="Search">
                 <Form.Row>
                   <Col xs="auto">
-                    <Button variant="outline-secondary" size="sm">
+                    <Button
+                      variant="outline-secondary"
+                      size="sm"
+                      onClick={getCurrentLocation}
+                    >
                       <FontAwesomeIcon icon={faMapMarkerAlt} />
                     </Button>
                     <Button type="submit" variant="outline-secondary" size="sm">

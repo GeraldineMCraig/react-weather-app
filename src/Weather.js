@@ -48,7 +48,7 @@ export default function Weather(props) {
 
   function getCurrentLocation(event) {
     event.preventDefault();
-    navigator.geolocation.getCurrentPosition(handleResponse);
+    navigator.geolocation.getCurrentPosition(searchLocation);
   }
 
   if (weatherData.ready) {
